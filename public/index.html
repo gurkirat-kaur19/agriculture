@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Agri Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌾 Smart Agriculture Assistant</h1>
+
+  <form id="cropForm">
+    <input type="text" id="city" placeholder="Enter your city" required>
+    <select id="soil">
+      <option value="loamy">Loamy</option>
+      <option value="clayey">Clayey</option>
+      <option value="sandy">Sandy</option>
+    </select>
+    <input type="number" id="ph" placeholder="Soil pH level" step="0.1">
+    <button type="submit">Get Recommendation</button>
+  </form>
+
+  <div id="result"></div>
+
+  <div id="chatbot">
+    <h2>🧠 Ask Krishi Sakhi</h2>
+    <input type="text" id="chatInput" placeholder="Ask a question...">
+    <button onclick="sendMessage()">Send</button>
+    <div id="chatResponse"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
